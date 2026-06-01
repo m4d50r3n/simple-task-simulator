@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>Simple Task Simulator</title>
+    <script type="module" src="scripts.js"></script>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 2px solid;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>
+            <strong>Instructions:</strong> If the message is approving the request, click the box on the left. Otherwise, click the box on the right.
+        </p>
+        <p>
+            <strong>Message: </strong><span id="messageSpan"></span>
+        </p>
+        <p>
+            <strong>Messages sorted correctly: </strong><span id="score"></span>
+        </p>
+    </div>
+    <div style="display: flex;">
+        <div class="box" id="left"></div>
+        <div class="box" id="right"></div>
+    </div>
+</body>
